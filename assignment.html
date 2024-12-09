@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('background4.jpg');
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+
+        .profile h2 {
+            margin: 10px 0 5px;
+        }
+
+        .profile p {
+            margin: 0;
+            color: #555;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cards {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 16px);
+            max-width: calc(33.333% - 16px);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #ff6347; /* Attractive color for headings */
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .profile h2 {
+            color: #4682b4; /* Different color for profile name */
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a5acd; /* Attractive color for main heading */
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="IMG-20241208-WA0056 copy.jpg" alt="Profile Picture">
+            <h2 style="color: #4682b4;">Evans Kirimi</h2>
+            <p>Email: <a href="mailto:kirimievansgitonga@gmail.com">kirimievansgitonga@gmail.com</a></p>
+        </div>
+
+        <h1 style="color: #6a5acd;">Register</h1>
+        <form action="register.php" method="POST">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" placeholder="password" id="confirm_password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="index.php">Login here</a></p>
+
+        <div class="cards">
+            <div class="card">
+                <h3 style="color: #ff6347;">About Me</h3>
+                <p>I am passionate about technology and design, always eager to learn new things.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #ff6347;">My Skills</h3>
+                <p>Proficient in web development, problem-solving, and creating user-friendly designs.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #ff6347;">Contact</h3>
+                <p>Reach out to me at <a href="mailto:kirimievansgitonga@gmail.com">kirimievansgitonga@gmail.com</a>.</p>
+                <p>or chat on whatsapp<a href="https://wa.me/25470883060" target="_blank">Chat with us on WhatsApp</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
